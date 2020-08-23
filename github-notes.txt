@@ -6,6 +6,9 @@ To Know Status:
 	
 To Add file:
 	git add filename
+
+To Add all files:
+	git add .
 	
 To Commit:
 	git commit -m "message"
@@ -15,3 +18,35 @@ To Publish/Push local commits to repository/master:
 	
 To Sync from repository:
 	git pull
+	
+BRANCHING:
+	Branching is to make sure a developer can work on his/her individual branch without merging it to the master/production release.
+	
+	To see the branch:
+		git branch
+		
+	To add branch:
+		git branch branch-name
+		
+	To change branch:
+		git checkout branch-name
+		
+	To push the branch:
+		git push --set-upstream origin branch-name
+
+TO CREATE PULL REQUEST FOR REVIEW:
+	1. Click on "Compare & Pull request"
+	2. Add the comments regarding changes and click on "Create Pull request"
+	3. Pull request will now be created.
+	
+TO VIEW THE PULL REQUEST:
+	1. Click on "Pull requests" to view it.
+	2. See the "File Changes".
+	3. Click on the lines in the code to add any comment and click on "Start a review"
+	4. To finish review, click on "Finish your review" by adding final comments. 
+
+TO MERGE PULL REQUEST: (Mostly will be done by somebody on Team)
+	1. Click on "Merge Pull Request" and "Confirm Merge"
+	2. Delete the branch if not required.
+	3. All done. now changes will be reflected in the master code. 
+	

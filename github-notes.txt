@@ -1,4 +1,4 @@
-To Clone:
+To Clone[To download project initially]:
 	git clone "http clone url"
 	
 To Know Status:
@@ -12,3 +12,6 @@ To Commit:
 	
 To Publish/Push local commits to repository/master:
 	git push
+	
+To Sync from repository:
+	git pull

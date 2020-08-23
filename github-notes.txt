@@ -1,0 +1,14 @@
+To Clone:
+	git clone "http clone url"
+	
+To Know Status:
+	git status
+	
+To Add file:
+	git add filename
+	
+To Commit:
+	git commit -m "message"
+	
+To Publish/Push local commits to repository/master:
+	git push

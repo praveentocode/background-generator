@@ -31,8 +31,11 @@ BRANCHING:
 	To change branch:
 		git checkout branch-name
 		
-	To push the branch:
+	To push the branch when branch is not there:
 		git push --set-upstream origin branch-name
+	
+	To push the branch when branch exists:
+		git push
 
 TO CREATE PULL REQUEST FOR REVIEW:
 	1. Click on "Compare & Pull request"
@@ -49,4 +52,17 @@ TO MERGE PULL REQUEST: (Mostly will be done by somebody on Team)
 	1. Click on "Merge Pull Request" and "Confirm Merge"
 	2. Delete the branch if not required.
 	3. All done. now changes will be reflected in the master code. 
+	
+TO MERGE BRANCH WITH MASTER:
+	git merge master
+	
+	SCENARIO WHERE MERGE CONFLICT CAN OCCUR:
+		When 2 developers work on the same changes.
+		
+		1. Developer A already created a Pull request for his branch and waiting for review and merge request from Developer B.
+		2. Developer B has made a change on the same line as of Developer A. Now, Developer B accepts the Pull request of Developer A without
+		realizing the same line change and merges into the master. 
+		3. Now Developer B merges the master with his branch which has the changes on the same line. Now the conflict occurs.		
+		4. If there are conflicts, in the file, <<<<<HEAD and >>>>>master will be displayed. If we want to have those merge changes, 
+		we can delete HEAD/master and commit those changes.
 	

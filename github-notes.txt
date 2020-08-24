@@ -67,4 +67,32 @@ TO MERGE BRANCH WITH MASTER:
 		latest changes branch and merges the master with his branch. Now the conflict occurs.		
 		4. If there are conflicts, in the file, <<<<<HEAD and >>>>>master will be displayed. If we want to have those merge changes, 
 		we can delete HEAD/master and commit those changes.
+		
+TO DEPLOY PROJECT:
+	1. Click on Repository -> New -> Enter Respository Name and Create Repository
+	2. Copy the SSH key. If there is not SSH key, click on HTTPS instead.
+	3. Connect the actual project to the repository we made. 
+		a. In git (master) => git remote add origin git@github.com:praveentocode/monster-rolodex.git
+		b. yarn add gh-pages
+		c. In react app, go to package.json and add "homepage": "https://github-username.github.io/name-of-the-repository".
+		d. Add 2 scripts. 
+			"scripts: {
+				"predeploy" : "yarn build"
+				"deploy" : "gh-pages -d build"
+			}
+	4. Go to terminal and command "yarn deploy". If there is permission denied error, then use Https instead of ssh.
+	5. git add -A
+	6. git commit -m "adding files for github pages"
+	7. ggpush
+		If you don't have zsh shell, you will have to run: 
+			git push origin master
+	8. Go to github repository and refresh. We can see the project files.
+	9. Go to Settings, make sure source is pointing to the "gh-pages-branch".
+		Click on the link, we can see the website is live. 
 	
+
+
+
+
+
+

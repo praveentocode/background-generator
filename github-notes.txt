@@ -1,5 +1,11 @@
+To add project initially:
+	git remote add origin "ssh/https url"
+
 To Clone[To download project initially]:
 	git clone "http clone url"
+	
+To remove origin:
+	git remote remove origin
 	
 To Know Status:
 	git status
@@ -15,6 +21,7 @@ To Commit:
 	
 To Publish/Push local commits to repository/master:
 	git push
+	git push origin master
 	
 To Sync from repository:
 	git pull

@@ -22,6 +22,7 @@ To Commit:
 To Publish/Push local commits to repository/master:
 	git push
 	git push origin master
+	git push -u origin master
 	
 To Sync from repository:
 	git pull
